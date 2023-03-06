@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: Text('앱임'),
+              title: Text('제목입니다'),
             ),
             body: Align(
               alignment: Alignment.topCenter,
