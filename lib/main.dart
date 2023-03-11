@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           appBar: titleSection,
           body: bodySection,
+          bottomNavigationBar: bottomSection,
         ));
   }
 
@@ -85,4 +86,18 @@ class MyApp extends StatelessWidget {
           )
         ],
       ));
+
+  Widget bottomSection = BottomAppBar(
+    child: Container(
+      padding: EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Icon(Icons.ac_unit),
+          Icon(Icons.ac_unit),
+          Icon(Icons.ac_unit)
+        ],
+      ),
+    ),
+  );
 }
